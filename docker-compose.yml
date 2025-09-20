@@ -10,7 +10,7 @@ services:
       - RELOAD=false
       - HOST=0.0.0.0
       - PORT=8000
-      - CORS_ORIGINS=http://161.35.223.146,http://161.35.223.146:80,http://localhost:8080,http://localhost:3000
+      - CORS_ORIGINS=http://161.35.223.146,http://161.35.223.146:80,http://localhost:8080,http://localhost:3000,http://fugasi.it,https://fugasi.it
     ports:
       - "8000:8000"
     restart: unless-stopped
