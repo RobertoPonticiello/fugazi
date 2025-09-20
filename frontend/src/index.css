@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Finge Financial Analysis - Professional Design System */
+
+@layer base {
+  :root {
+    /* Core Colors */
+    --background: 220 26% 6%;
+    --foreground: 210 40% 98%;
+    
+    /* Surface Colors */
+    --card: 220 23% 9%;
+    --card-foreground: 210 40% 98%;
+    
+    --surface: 220 20% 12%;
+    --surface-foreground: 210 40% 95%;
+    
+    --popover: 220 23% 9%;
+    --popover-foreground: 210 40% 98%;
+    
+    /* Financial Signal Colors */
+    --bullish: 142 76% 36%;
+    --bullish-foreground: 0 0% 100%;
+    --bullish-muted: 142 76% 36% / 0.12;
+    
+    --bearish: 0 84% 60%;
+    --bearish-foreground: 0 0% 100%;
+    --bearish-muted: 0 84% 60% / 0.12;
+    
+    --neutral: 43 74% 60%;
+    --neutral-foreground: 220 26% 6%;
+    --neutral-muted: 43 74% 60% / 0.12;
+    
+    /* Brand Colors */
+    --primary: 217 91% 60%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 217 91% 70%;
+    
+    --secondary: 220 14% 20%;
+    --secondary-foreground: 210 40% 98%;
+    
+    --accent: 220 20% 15%;
+    --accent-foreground: 210 40% 98%;
+    
+    --muted: 220 14% 20%;
+    --muted-foreground: 215 20.2% 65.1%;
+    
+    /* Interactive States */
+    --border: 220 14% 20%;
+    --input: 220 20% 12%;
+    --ring: 217 91% 60%;
+    
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    
+    /* Layout */
+    --radius: 0.75rem;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+    --gradient-surface: linear-gradient(135deg, hsl(var(--surface)), hsl(var(--card)));
+    --gradient-bullish: linear-gradient(135deg, hsl(var(--bullish)), hsl(142 76% 45%));
+    --gradient-bearish: linear-gradient(135deg, hsl(var(--bearish)), hsl(0 84% 70%));
+    
+    /* Shadows */
+    --shadow-soft: 0 4px 20px -4px hsl(220 26% 2% / 0.3);
+    --shadow-glow: 0 0 40px hsl(var(--primary) / 0.15);
+    --shadow-card: 0 8px 32px -8px hsl(220 26% 2% / 0.4);
+    
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-spring: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-[Inter];
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+}
+
+@layer components {
+  .financial-card {
+    @apply bg-card border border-border rounded-xl p-6;
+    box-shadow: var(--shadow-card);
+  }
+  
+  .signal-bullish {
+    @apply bg-bullish text-bullish-foreground;
+    background: var(--gradient-bullish);
+  }
+  
+  .signal-bearish {
+    @apply bg-bearish text-bearish-foreground;
+    background: var(--gradient-bearish);
+  }
+  
+  .signal-neutral {
+    @apply bg-neutral text-neutral-foreground;
+  }
+  
+  .glass-effect {
+    backdrop-filter: blur(12px) saturate(180%);
+    background: hsl(var(--card) / 0.8);
+    border: 1px solid hsl(var(--border) / 0.3);
+  }
+  
+  .metric-positive {
+    @apply text-bullish;
+  }
+  
+  .metric-negative {
+    @apply text-bearish;
+  }
+  
+  .metric-neutral {
+    @apply text-neutral;
+  }
+  
+  .glow-primary {
+    box-shadow: var(--shadow-glow);
+  }
+}

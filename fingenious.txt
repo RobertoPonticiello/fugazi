@@ -1,0 +1,298 @@
+﻿PRD — Finge Characteristic (MVP con media dinamica e scoring aggregato)
+________________
+
+
+1. Obiettivo immediato
+Realizzare entro la giornata un prototipo funzionante che:
+* Permette ricerca di una società quotata (via ticker).
+
+* Recupera i fondamentali chiave (P/E, P/B, ROE).
+
+* Calcola una media dinamica di settore usando le prime 10 società più grandi del settore per market cap.
+
+* Restituisce un segnale finale aggregato anche in caso di indicatori contrastanti.
+
+Il codice deve restare modulare, così da aggiungere facilmente altri indicatori e logiche in futuro.
+________________
+
+
+2. Funzionalità MVP
+   1. Ricerca società
+
+      * Input: ticker.
+
+      * Output: dati fondamentali aziendali + settore di appartenenza.
+
+         2. Raccolta dati settore
+
+            * API esterna (Yahoo Finance / Financial Modeling Prep).
+
+            * Identificazione settore della società target.
+
+            * Selezione prime 10 società per market cap in quel settore.
+
+            * Calcolo media/mediana per P/E, P/B, ROE.
+
+               3. Analisi comparativa
+
+                  * Confronto valori aziendali con media settore.
+
+                     4. Scoring aggregato
+
+                        * Ogni indicatore genera un punteggio normalizzato [-1, 1]:
+
+                           * 20% sopra media = -1 (overvalued).
+
+
+                           * ±20% dalla media = 0 (fair).
+
+                           * 20% sotto media = +1 (undervalued).
+
+
+                              * Punteggi pesati (es. P/E=0.5, P/B=0.3, ROE=0.2).
+
+                              * Somma pesata → risultato finale.
+
+                              * Interpretazione:
+
+                                 * ≤ -0.2 = Overvalued
+
+                                 * -0.2 < x < 0.2 = Fairly valued
+
+                                 * ≥ 0.2 = Undervalued
+
+                                    5. Output utente
+
+                                       * Tabella: valori azienda vs media settore.
+
+                                       * Grafico a barre comparativo.
+
+                                       * Indicatore finale colorato (verde, giallo, rosso).
+
+________________
+
+
+3. Requisiti di modularità
+                                          * Ogni indicatore = funzione indipendente in cartella indicators/.
+
+                                          * Algoritmo di scoring importa automaticamente indicatori disponibili.
+
+                                          * Aggiungere un indicatore = nuovo file + aggiornamento pesi, senza toccare il core.
+
+________________
+
+
+4. Architettura MVP
+Frontend
+                                             * React + Tailwind.
+
+                                             * Componenti:
+
+                                                * SearchBar (ticker input).
+
+                                                * CompanyCard (valori fondamentali).
+
+                                                * BenchmarkChart (azienda vs media settore).
+
+                                                * SignalIndicator (output finale).
+
+Backend
+                                                   * FastAPI con endpoint:
+
+                                                      * GET /company/{ticker} → dati fondamentali + settore.
+
+                                                      * GET /sector/{sector} → top 10 aziende + media fondamentali.
+
+                                                      * GET /analysis/{ticker} → aggregazione + segnale finale.
+
+Database/cache
+                                                         * MongoDB (o Redis se solo cache).
+
+                                                         * Tabelle/collezioni:
+
+                                                            * companies (cache dati fondamentali).
+
+                                                            * sector_benchmarks (media calcolata giornalmente).
+
+                                                               * Aggiornamento benchmark: calcolo al primo accesso → cache per 24h.
+
+________________
+
+
+5. Roadmap giornata (MVP)
+                                                                  * Ore 1–2: setup repo → FastAPI + React boilerplate.
+
+                                                                  * Ore 2–3: endpoint company/{ticker} con integrazione API esterna.
+
+                                                                  * Ore 3–4: endpoint sector/{sector} → top 10 aziende + calcolo media.
+
+                                                                  * Ore 4–5: implementazione scoring aggregato con pesi.
+
+                                                                  * Ore 5–6: frontend → tabella e output segnale.
+
+                                                                  * Ore 6–7: aggiunta grafico comparativo.
+
+                                                                  * Ore 8: test end-to-end e demo.
+
+________________
+
+
+6. Estensioni future
+                                                                     * Nuovi indicatori (Debt/Equity, margini, crescita).
+
+                                                                     * Algoritmi più complessi (regressione multipla, Z-score).
+
+                                                                     * Persistenza storica e tracciamento evoluzione segnali.
+
+                                                                     * Deploy containerizzato e scaling.
+
+
+
+
+
+
+
+
+
+
+Suddivisione del lavoro:
+Backend
+Integrazione API esterne (Yahoo Finance / FMP).
+                                                                        * Endpoint GET /company/{ticker} → fondamentali e settore.
+
+                                                                        * Endpoint GET /sector/{sector} → top 10 aziende + media dinamica.
+
+                                                                        * Endpoint GET /analysis/{ticker} → aggregazione + segnale finale.
+
+                                                                        * Struttura modulare per gli indicatori (indicators/).
+
+                                                                        * Caching (in-memory o MongoDB).
+
+________________
+
+
+Frontend 
+                                                                           * Setup React + Tailwind.
+
+                                                                           * SearchBar per inserire ticker.
+
+                                                                           * CompanyCard per dati aziendali.
+
+                                                                           * BenchmarkChart (grafico Recharts) per confronto azienda vs media settore.
+
+                                                                           * SignalIndicator per risultato finale (verde/giallo/rosso).
+
+                                                                           * Collegamento agli endpoint backend (/company, /analysis).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Interfaccia frontend ↔ backend (REST API, JSON):
+________________
+
+
+BASE URL
+ http://localhost:8000/api
+
+
+                                                                              1. GET /company/{ticker}
+Descrizione: dati fondamentali di una società.
+Request:
+GET /api/company/AAPL
+Response (200):
+{
+"ticker": "AAPL",
+"name": "Apple Inc.",
+"sector": "Technology",
+"market_cap": 2700000000000,
+"fundamentals": {
+"PE": 28.5,
+"PB": 12.3,
+"ROE": 18.7
+}
+}
+
+________________
+
+
+                                                                                 2. GET /sector/{sector}
+Descrizione: calcolo media dinamica per le prime 10 aziende del settore.
+Request:
+GET /api/sector/Technology
+Response (200):
+{
+"sector": "Technology",
+"companies_used": [
+"AAPL", "MSFT", "NVDA", "GOOGL", "AMZN",
+"META", "ORCL", "CRM", "TSM", "INTC"
+],
+"benchmark": {
+"PE": 25.2,
+"PB": 10.1,
+"ROE": 16.5
+}
+}
+
+________________
+
+
+                                                                                    3. GET /analysis/{ticker}
+Descrizione: confronto azienda vs media settore + segnale finale.
+Request:
+GET /api/analysis/AAPL
+Response (200):
+{
+"ticker": "AAPL",
+"sector": "Technology",
+"fundamentals": {
+"PE": 28.5,
+"PB": 12.3,
+"ROE": 18.7
+},
+"benchmark": {
+"PE": 25.2,
+"PB": 10.1,
+"ROE": 16.5
+},
+"indicators": {
+"PE": "Overvalued",
+"PB": "Overvalued",
+"ROE": "Undervalued"
+},
+"score": -0.35,
+"final_signal": "Overvalued"
+}
+
+________________
+
+
+Errori comuni:
+404 → ticker non trovato
+500 → API esterna non risponde
+
+
+
+
+
+
+
+
+  
+
+https://financialmodelingprep.com/stable/analyst-estimates?symbol=AAPL&period=annual&apikey=hITokCOYLN4BAlL3aVWgRovz9mqjYST7

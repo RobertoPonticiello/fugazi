@@ -1,0 +1,55 @@
+version: '3.8'
+
+services:
+  backend:
+    build: ./backend
+    container_name: finge-backend
+    environment:
+      - FMP_API_KEY=${FMP_API_KEY}
+      - DEBUG=false
+      - RELOAD=false
+      - HOST=0.0.0.0
+      - PORT=8000
+      - CORS_ORIGINS=https://app.tuodominio.it,https://www.tuodominio.it
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    networks:
+      - finge-network
+
+  frontend:
+    build: ./frontend
+    container_name: finge-frontend
+    environment:
+      - VITE_API_BASE_URL=https://api.tuodominio.it/api
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+    restart: unless-stopped
+    networks:
+      - finge-network
+
+  nginx:
+    image: nginx:alpine
+    container_name: finge-nginx
+    ports:
+      - "443:443"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./nginx/ssl:/etc/nginx/ssl:ro
+    depends_on:
+      - frontend
+      - backend
+    restart: unless-stopped
+    networks:
+      - finge-network
+
+networks:
+  finge-network:
+    driver: bridge

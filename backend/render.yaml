@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: finge-backend
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python -m uvicorn main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: FMP_API_KEY
+        sync: false
+      - key: DEBUG
+        value: false
+      - key: RELOAD
+        value: false
+      - key: CORS_ORIGINS
+        value: https://finge.vercel.app

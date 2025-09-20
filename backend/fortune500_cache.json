@@ -1,0 +1,884 @@
+{
+  "AAPL": {
+    "symbol": "AAPL",
+    "name": "Apple Inc.",
+    "exchange": "NASDAQ",
+    "market_cap": null,
+    "sector": "Technology",
+    "industry": null,
+    "last_updated": "2025-09-13T16:21:12.497436"
+  },
+  "name_apple_inc.": {
+    "symbol": "AAPL",
+    "name": "Apple Inc.",
+    "exchange": "NASDAQ",
+    "market_cap": null,
+    "sector": "Technology",
+    "industry": null,
+    "last_updated": "2025-09-13T16:21:12.497436"
+  },
+  "MSFT": {
+    "symbol": "MSFT",
+    "name": "Microsoft Corporation",
+    "exchange": "NASDAQ",
+    "market_cap": null,
+    "sector": "Technology",
+    "industry": null,
+    "last_updated": "2025-09-13T16:21:12.497458"
+  },
+  "name_microsoft_corporation": {
+    "symbol": "MSFT",
+    "name": "Microsoft Corporation",
+    "exchange": "NASDAQ",
+    "market_cap": null,
+    "sector": "Technology",
+    "industry": null,
+    "last_updated": "2025-09-13T16:21:12.497458"
+  },
+  "GOOGL": {
+    "symbol": "GOOGL",
+    "name": "Alphabet Inc. Class A",
+    "exchange": "NASDAQ",
+    "market_cap": null,
+    "sector": "Technology",
+    "industry": null,
+    "last_updated": "2025-09-13T16:21:12.497470"
+  },
+  "name_alphabet_inc._class_a": {
+    "symbol": "GOOGL",
+    "name": "Alphabet Inc. Class A",
+    "exchange": "NASDAQ",
+    "market_cap": null,
+    "sector": "Technology",
+    "industry": null,
+    "last_updated": "2025-09-13T16:21:12.497470"
+  },
+  "AMZN": {
+    "symbol": "AMZN",
+    "name": "Amazon.com Inc.",
+    "exchange": "NASDAQ",
+    "market_cap": null,
+    "sector": "Consumer Discretionary",
+    "industry": null,
+    "last_updated": "2025-09-13T16:21:12.497481"
+  },
+  "name_amazon.com_inc.": {
+    "symbol": "AMZN",
+    "name": "Amazon.com Inc.",
+    "exchange": "NASDAQ",
+    "market_cap": null,
+    "sector": "Consumer Discretionary",
+    "industry": null,
+    "last_updated": "2025-09-13T16:21:12.497481"
+  },
+  "NVDA": {
+    "symbol": "NVDA",
+    "name": "NVIDIA Corporation",
+    "exchange": "NASDAQ",
+    "market_cap": null,
+    "sector": "Technology",
+    "industry": null,
+    "last_updated": "2025-09-13T16:21:12.497491"
+  },
+  "name_nvidia_corporation": {
+    "symbol": "NVDA",
+    "name": "NVIDIA Corporation",
+    "exchange": "NASDAQ",
+    "market_cap": null,
+    "sector": "Technology",
+    "industry": null,
+    "last_updated": "2025-09-13T16:21:12.497491"
+  },
+  "META": {
+    "symbol": "META",
+    "name": "Meta Platforms Inc.",
+    "exchange": "NASDAQ",
+    "market_cap": null,
+    "sector": "Technology",
+    "industry": null,
+    "last_updated": "2025-09-13T16:21:12.497501"
+  },
+  "name_meta_platforms_inc.": {
+    "symbol": "META",
+    "name": "Meta Platforms Inc.",
+    "exchange": "NASDAQ",
+    "market_cap": null,
+    "sector": "Technology",
+    "industry": null,
+    "last_updated": "2025-09-13T16:21:12.497501"
+  },
+  "TSLA": {
+    "symbol": "TSLA",
+    "name": "Tesla Inc.",
+    "exchange": "NASDAQ",
+    "market_cap": null,
+    "sector": "Consumer Discretionary",
+    "industry": null,
+    "last_updated": "2025-09-13T16:21:12.497512"
+  },
+  "name_tesla_inc.": {
+    "symbol": "TSLA",
+    "name": "Tesla Inc.",
+    "exchange": "NASDAQ",
+    "market_cap": null,
+    "sector": "Consumer Discretionary",
+    "industry": null,
+    "last_updated": "2025-09-13T16:21:12.497512"
+  },
+  "BRK.B": {
+    "symbol": "BRK.B",
+    "name": "Berkshire Hathaway Inc. Class B",
+    "exchange": "NYSE",
+    "market_cap": null,
+    "sector": "Financials",
+    "industry": null,
+    "last_updated": "2025-09-13T16:21:12.497522"
+  },
+  "name_berkshire_hathaway_inc._class_b": {
+    "symbol": "BRK.B",
+    "name": "Berkshire Hathaway Inc. Class B",
+    "exchange": "NYSE",
+    "market_cap": null,
+    "sector": "Financials",
+    "industry": null,
+    "last_updated": "2025-09-13T16:21:12.497522"
+  },
+  "UNH": {
+    "symbol": "UNH",
+    "name": "UnitedHealth Group Incorporated",
+    "exchange": "NYSE",
+    "market_cap": null,
+    "sector": "Health Care",
+    "industry": null,
+    "last_updated": "2025-09-13T16:21:12.497532"
+  },
+  "name_unitedhealth_group_incorporated": {
+    "symbol": "UNH",
+    "name": "UnitedHealth Group Incorporated",
+    "exchange": "NYSE",
+    "market_cap": null,
+    "sector": "Health Care",
+    "industry": null,
+    "last_updated": "2025-09-13T16:21:12.497532"
+  },
+  "JNJ": {
+    "symbol": "JNJ",
+    "name": "Johnson & Johnson",
+    "exchange": "NYSE",
+    "market_cap": null,
+    "sector": "Health Care",
+    "industry": null,
+    "last_updated": "2025-09-13T16:21:12.497543"
+  },
+  "name_johnson_&_johnson": {
+    "symbol": "JNJ",
+    "name": "Johnson & Johnson",
+    "exchange": "NYSE",
+    "market_cap": null,
+    "sector": "Health Care",
+    "industry": null,
+    "last_updated": "2025-09-13T16:21:12.497543"
+  },
+  "JPM": {
+    "symbol": "JPM",
+    "name": "JPMorgan Chase & Co.",
+    "exchange": "NYSE",
+    "market_cap": null,
+    "sector": "Financials",
+    "industry": null,
+    "last_updated": "2025-09-13T16:21:12.497553"
+  },
+  "name_jpmorgan_chase_&_co.": {
+    "symbol": "JPM",
+    "name": "JPMorgan Chase & Co.",
+    "exchange": "NYSE",
+    "market_cap": null,
+    "sector": "Financials",
+    "industry": null,
+    "last_updated": "2025-09-13T16:21:12.497553"
+  },
+  "V": {
+    "symbol": "V",
+    "name": "Visa Inc.",
+    "exchange": "NYSE",
+    "market_cap": null,
+    "sector": "Financials",
+    "industry": null,
+    "last_updated": "2025-09-13T16:21:12.497563"
+  },
+  "name_visa_inc.": {
+    "symbol": "V",
+    "name": "Visa Inc.",
+    "exchange": "NYSE",
+    "market_cap": null,
+    "sector": "Financials",
+    "industry": null,
+    "last_updated": "2025-09-13T16:21:12.497563"
+  },
+  "PG": {
+    "symbol": "PG",
+    "name": "Procter & Gamble Co.",
+    "exchange": "NYSE",
+    "market_cap": null,
+    "sector": "Consumer Staples",
+    "industry": null,
+    "last_updated": "2025-09-13T16:21:12.497573"
+  },
+  "name_procter_&_gamble_co.": {
+    "symbol": "PG",
+    "name": "Procter & Gamble Co.",
+    "exchange": "NYSE",
+    "market_cap": null,
+    "sector": "Consumer Staples",
+    "industry": null,
+    "last_updated": "2025-09-13T16:21:12.497573"
+  },
+  "HD": {
+    "symbol": "HD",
+    "name": "Home Depot Inc.",
+    "exchange": "NYSE",
+    "market_cap": null,
+    "sector": "Consumer Discretionary",
+    "industry": null,
+    "last_updated": "2025-09-13T16:21:12.497583"
+  },
+  "name_home_depot_inc.": {
+    "symbol": "HD",
+    "name": "Home Depot Inc.",
+    "exchange": "NYSE",
+    "market_cap": null,
+    "sector": "Consumer Discretionary",
+    "industry": null,
+    "last_updated": "2025-09-13T16:21:12.497583"
+  },
+  "MA": {
+    "symbol": "MA",
+    "name": "Mastercard Incorporated",
+    "exchange": "NYSE",
+    "market_cap": null,
+    "sector": "Financials",
+    "industry": null,
+    "last_updated": "2025-09-13T16:21:12.497593"
+  },
+  "name_mastercard_incorporated": {
+    "symbol": "MA",
+    "name": "Mastercard Incorporated",
+    "exchange": "NYSE",
+    "market_cap": null,
+    "sector": "Financials",
+    "industry": null,
+    "last_updated": "2025-09-13T16:21:12.497593"
+  },
+  "DIS": {
+    "symbol": "DIS",
+    "name": "Walt Disney Co.",
+    "exchange": "NYSE",
+    "market_cap": null,
+    "sector": "Communication Services",
+    "industry": null,
+    "last_updated": "2025-09-13T16:21:12.497602"
+  },
+  "name_walt_disney_co.": {
+    "symbol": "DIS",
+    "name": "Walt Disney Co.",
+    "exchange": "NYSE",
+    "market_cap": null,
+    "sector": "Communication Services",
+    "industry": null,
+    "last_updated": "2025-09-13T16:21:12.497602"
+  },
+  "PYPL": {
+    "symbol": "PYPL",
+    "name": "PayPal Holdings Inc.",
+    "exchange": "NASDAQ",
+    "market_cap": null,
+    "sector": "Financials",
+    "industry": null,
+    "last_updated": "2025-09-13T16:21:12.497612"
+  },
+  "name_paypal_holdings_inc.": {
+    "symbol": "PYPL",
+    "name": "PayPal Holdings Inc.",
+    "exchange": "NASDAQ",
+    "market_cap": null,
+    "sector": "Financials",
+    "industry": null,
+    "last_updated": "2025-09-13T16:21:12.497612"
+  },
+  "ADBE": {
+    "symbol": "ADBE",
+    "name": "Adobe Inc.",
+    "exchange": "NASDAQ",
+    "market_cap": null,
+    "sector": "Technology",
+    "industry": null,
+    "last_updated": "2025-09-13T16:21:12.497622"
+  },
+  "name_adobe_inc.": {
+    "symbol": "ADBE",
+    "name": "Adobe Inc.",
+    "exchange": "NASDAQ",
+    "market_cap": null,
+    "sector": "Technology",
+    "industry": null,
+    "last_updated": "2025-09-13T16:21:12.497622"
+  },
+  "CMCSA": {
+    "symbol": "CMCSA",
+    "name": "Comcast Corporation",
+    "exchange": "NASDAQ",
+    "market_cap": null,
+    "sector": "Communication Services",
+    "industry": null,
+    "last_updated": "2025-09-13T16:21:12.497632"
+  },
+  "name_comcast_corporation": {
+    "symbol": "CMCSA",
+    "name": "Comcast Corporation",
+    "exchange": "NASDAQ",
+    "market_cap": null,
+    "sector": "Communication Services",
+    "industry": null,
+    "last_updated": "2025-09-13T16:21:12.497632"
+  },
+  "NFLX": {
+    "symbol": "NFLX",
+    "name": "Netflix Inc.",
+    "exchange": "NASDAQ",
+    "market_cap": null,
+    "sector": "Communication Services",
+    "industry": null,
+    "last_updated": "2025-09-13T16:21:12.497641"
+  },
+  "name_netflix_inc.": {
+    "symbol": "NFLX",
+    "name": "Netflix Inc.",
+    "exchange": "NASDAQ",
+    "market_cap": null,
+    "sector": "Communication Services",
+    "industry": null,
+    "last_updated": "2025-09-13T16:21:12.497641"
+  },
+  "CRM": {
+    "symbol": "CRM",
+    "name": "Salesforce Inc.",
+    "exchange": "NYSE",
+    "market_cap": null,
+    "sector": "Technology",
+    "industry": null,
+    "last_updated": "2025-09-13T16:21:12.497651"
+  },
+  "name_salesforce_inc.": {
+    "symbol": "CRM",
+    "name": "Salesforce Inc.",
+    "exchange": "NYSE",
+    "market_cap": null,
+    "sector": "Technology",
+    "industry": null,
+    "last_updated": "2025-09-13T16:21:12.497651"
+  },
+  "INTC": {
+    "symbol": "INTC",
+    "name": "Intel Corporation",
+    "exchange": "NASDAQ",
+    "market_cap": null,
+    "sector": "Technology",
+    "industry": null,
+    "last_updated": "2025-09-13T16:21:12.497661"
+  },
+  "name_intel_corporation": {
+    "symbol": "INTC",
+    "name": "Intel Corporation",
+    "exchange": "NASDAQ",
+    "market_cap": null,
+    "sector": "Technology",
+    "industry": null,
+    "last_updated": "2025-09-13T16:21:12.497661"
+  },
+  "PFE": {
+    "symbol": "PFE",
+    "name": "Pfizer Inc.",
+    "exchange": "NYSE",
+    "market_cap": null,
+    "sector": "Health Care",
+    "industry": null,
+    "last_updated": "2025-09-13T16:21:12.497671"
+  },
+  "name_pfizer_inc.": {
+    "symbol": "PFE",
+    "name": "Pfizer Inc.",
+    "exchange": "NYSE",
+    "market_cap": null,
+    "sector": "Health Care",
+    "industry": null,
+    "last_updated": "2025-09-13T16:21:12.497671"
+  },
+  "ABT": {
+    "symbol": "ABT",
+    "name": "Abbott Laboratories",
+    "exchange": "NYSE",
+    "market_cap": null,
+    "sector": "Health Care",
+    "industry": null,
+    "last_updated": "2025-09-13T16:21:12.497683"
+  },
+  "name_abbott_laboratories": {
+    "symbol": "ABT",
+    "name": "Abbott Laboratories",
+    "exchange": "NYSE",
+    "market_cap": null,
+    "sector": "Health Care",
+    "industry": null,
+    "last_updated": "2025-09-13T16:21:12.497683"
+  },
+  "TMO": {
+    "symbol": "TMO",
+    "name": "Thermo Fisher Scientific Inc.",
+    "exchange": "NYSE",
+    "market_cap": null,
+    "sector": "Health Care",
+    "industry": null,
+    "last_updated": "2025-09-13T16:21:12.497695"
+  },
+  "name_thermo_fisher_scientific_inc.": {
+    "symbol": "TMO",
+    "name": "Thermo Fisher Scientific Inc.",
+    "exchange": "NYSE",
+    "market_cap": null,
+    "sector": "Health Care",
+    "industry": null,
+    "last_updated": "2025-09-13T16:21:12.497695"
+  },
+  "ACN": {
+    "symbol": "ACN",
+    "name": "Accenture plc",
+    "exchange": "NYSE",
+    "market_cap": null,
+    "sector": "Technology",
+    "industry": null,
+    "last_updated": "2025-09-13T16:21:12.497704"
+  },
+  "name_accenture_plc": {
+    "symbol": "ACN",
+    "name": "Accenture plc",
+    "exchange": "NYSE",
+    "market_cap": null,
+    "sector": "Technology",
+    "industry": null,
+    "last_updated": "2025-09-13T16:21:12.497704"
+  },
+  "COST": {
+    "symbol": "COST",
+    "name": "Costco Wholesale Corporation",
+    "exchange": "NASDAQ",
+    "market_cap": null,
+    "sector": "Consumer Staples",
+    "industry": null,
+    "last_updated": "2025-09-13T16:21:12.497714"
+  },
+  "name_costco_wholesale_corporation": {
+    "symbol": "COST",
+    "name": "Costco Wholesale Corporation",
+    "exchange": "NASDAQ",
+    "market_cap": null,
+    "sector": "Consumer Staples",
+    "industry": null,
+    "last_updated": "2025-09-13T16:21:12.497714"
+  },
+  "DHR": {
+    "symbol": "DHR",
+    "name": "Danaher Corporation",
+    "exchange": "NYSE",
+    "market_cap": null,
+    "sector": "Health Care",
+    "industry": null,
+    "last_updated": "2025-09-13T16:21:12.497724"
+  },
+  "name_danaher_corporation": {
+    "symbol": "DHR",
+    "name": "Danaher Corporation",
+    "exchange": "NYSE",
+    "market_cap": null,
+    "sector": "Health Care",
+    "industry": null,
+    "last_updated": "2025-09-13T16:21:12.497724"
+  },
+  "VZ": {
+    "symbol": "VZ",
+    "name": "Verizon Communications Inc.",
+    "exchange": "NYSE",
+    "market_cap": null,
+    "sector": "Communication Services",
+    "industry": null,
+    "last_updated": "2025-09-13T16:21:12.497734"
+  },
+  "name_verizon_communications_inc.": {
+    "symbol": "VZ",
+    "name": "Verizon Communications Inc.",
+    "exchange": "NYSE",
+    "market_cap": null,
+    "sector": "Communication Services",
+    "industry": null,
+    "last_updated": "2025-09-13T16:21:12.497734"
+  },
+  "WMT": {
+    "symbol": "WMT",
+    "name": "Walmart Inc.",
+    "exchange": "NYSE",
+    "market_cap": null,
+    "sector": "Consumer Staples",
+    "industry": null,
+    "last_updated": "2025-09-13T16:21:12.497744"
+  },
+  "name_walmart_inc.": {
+    "symbol": "WMT",
+    "name": "Walmart Inc.",
+    "exchange": "NYSE",
+    "market_cap": null,
+    "sector": "Consumer Staples",
+    "industry": null,
+    "last_updated": "2025-09-13T16:21:12.497744"
+  },
+  "T": {
+    "symbol": "T",
+    "name": "AT&T Inc.",
+    "exchange": "NYSE",
+    "market_cap": null,
+    "sector": "Communication Services",
+    "industry": null,
+    "last_updated": "2025-09-13T16:21:12.497753"
+  },
+  "name_at&t_inc.": {
+    "symbol": "T",
+    "name": "AT&T Inc.",
+    "exchange": "NYSE",
+    "market_cap": null,
+    "sector": "Communication Services",
+    "industry": null,
+    "last_updated": "2025-09-13T16:21:12.497753"
+  },
+  "NKE": {
+    "symbol": "NKE",
+    "name": "Nike Inc.",
+    "exchange": "NYSE",
+    "market_cap": null,
+    "sector": "Consumer Discretionary",
+    "industry": null,
+    "last_updated": "2025-09-13T16:21:12.497763"
+  },
+  "name_nike_inc.": {
+    "symbol": "NKE",
+    "name": "Nike Inc.",
+    "exchange": "NYSE",
+    "market_cap": null,
+    "sector": "Consumer Discretionary",
+    "industry": null,
+    "last_updated": "2025-09-13T16:21:12.497763"
+  },
+  "ABBV": {
+    "symbol": "ABBV",
+    "name": "AbbVie Inc.",
+    "exchange": "NYSE",
+    "market_cap": null,
+    "sector": "Health Care",
+    "industry": null,
+    "last_updated": "2025-09-13T16:21:12.497773"
+  },
+  "name_abbvie_inc.": {
+    "symbol": "ABBV",
+    "name": "AbbVie Inc.",
+    "exchange": "NYSE",
+    "market_cap": null,
+    "sector": "Health Care",
+    "industry": null,
+    "last_updated": "2025-09-13T16:21:12.497773"
+  },
+  "MRK": {
+    "symbol": "MRK",
+    "name": "Merck & Co. Inc.",
+    "exchange": "NYSE",
+    "market_cap": null,
+    "sector": "Health Care",
+    "industry": null,
+    "last_updated": "2025-09-13T16:21:12.497783"
+  },
+  "name_merck_&_co._inc.": {
+    "symbol": "MRK",
+    "name": "Merck & Co. Inc.",
+    "exchange": "NYSE",
+    "market_cap": null,
+    "sector": "Health Care",
+    "industry": null,
+    "last_updated": "2025-09-13T16:21:12.497783"
+  },
+  "PEP": {
+    "symbol": "PEP",
+    "name": "PepsiCo Inc.",
+    "exchange": "NASDAQ",
+    "market_cap": null,
+    "sector": "Consumer Staples",
+    "industry": null,
+    "last_updated": "2025-09-13T16:21:12.497793"
+  },
+  "name_pepsico_inc.": {
+    "symbol": "PEP",
+    "name": "PepsiCo Inc.",
+    "exchange": "NASDAQ",
+    "market_cap": null,
+    "sector": "Consumer Staples",
+    "industry": null,
+    "last_updated": "2025-09-13T16:21:12.497793"
+  },
+  "KO": {
+    "symbol": "KO",
+    "name": "Coca-Cola Co.",
+    "exchange": "NYSE",
+    "market_cap": null,
+    "sector": "Consumer Staples",
+    "industry": null,
+    "last_updated": "2025-09-13T16:21:12.497802"
+  },
+  "name_coca-cola_co.": {
+    "symbol": "KO",
+    "name": "Coca-Cola Co.",
+    "exchange": "NYSE",
+    "market_cap": null,
+    "sector": "Consumer Staples",
+    "industry": null,
+    "last_updated": "2025-09-13T16:21:12.497802"
+  },
+  "AVGO": {
+    "symbol": "AVGO",
+    "name": "Broadcom Inc.",
+    "exchange": "NASDAQ",
+    "market_cap": null,
+    "sector": "Technology",
+    "industry": null,
+    "last_updated": "2025-09-13T16:21:12.497812"
+  },
+  "name_broadcom_inc.": {
+    "symbol": "AVGO",
+    "name": "Broadcom Inc.",
+    "exchange": "NASDAQ",
+    "market_cap": null,
+    "sector": "Technology",
+    "industry": null,
+    "last_updated": "2025-09-13T16:21:12.497812"
+  },
+  "TXN": {
+    "symbol": "TXN",
+    "name": "Texas Instruments Incorporated",
+    "exchange": "NASDAQ",
+    "market_cap": null,
+    "sector": "Technology",
+    "industry": null,
+    "last_updated": "2025-09-13T16:21:12.497822"
+  },
+  "name_texas_instruments_incorporated": {
+    "symbol": "TXN",
+    "name": "Texas Instruments Incorporated",
+    "exchange": "NASDAQ",
+    "market_cap": null,
+    "sector": "Technology",
+    "industry": null,
+    "last_updated": "2025-09-13T16:21:12.497822"
+  },
+  "QCOM": {
+    "symbol": "QCOM",
+    "name": "QUALCOMM Incorporated",
+    "exchange": "NASDAQ",
+    "market_cap": null,
+    "sector": "Technology",
+    "industry": null,
+    "last_updated": "2025-09-13T16:21:12.497832"
+  },
+  "name_qualcomm_incorporated": {
+    "symbol": "QCOM",
+    "name": "QUALCOMM Incorporated",
+    "exchange": "NASDAQ",
+    "market_cap": null,
+    "sector": "Technology",
+    "industry": null,
+    "last_updated": "2025-09-13T16:21:12.497832"
+  },
+  "CSCO": {
+    "symbol": "CSCO",
+    "name": "Cisco Systems Inc.",
+    "exchange": "NASDAQ",
+    "market_cap": null,
+    "sector": "Technology",
+    "industry": null,
+    "last_updated": "2025-09-13T16:21:12.497841"
+  },
+  "name_cisco_systems_inc.": {
+    "symbol": "CSCO",
+    "name": "Cisco Systems Inc.",
+    "exchange": "NASDAQ",
+    "market_cap": null,
+    "sector": "Technology",
+    "industry": null,
+    "last_updated": "2025-09-13T16:21:12.497841"
+  },
+  "ORCL": {
+    "symbol": "ORCL",
+    "name": "Oracle Corporation",
+    "exchange": "NYSE",
+    "market_cap": null,
+    "sector": "Technology",
+    "industry": null,
+    "last_updated": "2025-09-13T16:21:12.497851"
+  },
+  "name_oracle_corporation": {
+    "symbol": "ORCL",
+    "name": "Oracle Corporation",
+    "exchange": "NYSE",
+    "market_cap": null,
+    "sector": "Technology",
+    "industry": null,
+    "last_updated": "2025-09-13T16:21:12.497851"
+  },
+  "IBM": {
+    "symbol": "IBM",
+    "name": "International Business Machines Corporation",
+    "exchange": "NYSE",
+    "market_cap": null,
+    "sector": "Technology",
+    "industry": null,
+    "last_updated": "2025-09-13T16:21:12.497861"
+  },
+  "name_international_business_machines_corporation": {
+    "symbol": "IBM",
+    "name": "International Business Machines Corporation",
+    "exchange": "NYSE",
+    "market_cap": null,
+    "sector": "Technology",
+    "industry": null,
+    "last_updated": "2025-09-13T16:21:12.497861"
+  },
+  "AMD": {
+    "symbol": "AMD",
+    "name": "Advanced Micro Devices Inc.",
+    "exchange": "NASDAQ",
+    "market_cap": null,
+    "sector": "Technology",
+    "industry": null,
+    "last_updated": "2025-09-13T16:21:12.497871"
+  },
+  "name_advanced_micro_devices_inc.": {
+    "symbol": "AMD",
+    "name": "Advanced Micro Devices Inc.",
+    "exchange": "NASDAQ",
+    "market_cap": null,
+    "sector": "Technology",
+    "industry": null,
+    "last_updated": "2025-09-13T16:21:12.497871"
+  },
+  "AMAT": {
+    "symbol": "AMAT",
+    "name": "Applied Materials Inc.",
+    "exchange": "NASDAQ",
+    "market_cap": null,
+    "sector": "Technology",
+    "industry": null,
+    "last_updated": "2025-09-13T16:21:12.497881"
+  },
+  "name_applied_materials_inc.": {
+    "symbol": "AMAT",
+    "name": "Applied Materials Inc.",
+    "exchange": "NASDAQ",
+    "market_cap": null,
+    "sector": "Technology",
+    "industry": null,
+    "last_updated": "2025-09-13T16:21:12.497881"
+  },
+  "MU": {
+    "symbol": "MU",
+    "name": "Micron Technology Inc.",
+    "exchange": "NASDAQ",
+    "market_cap": null,
+    "sector": "Technology",
+    "industry": null,
+    "last_updated": "2025-09-13T16:21:12.497891"
+  },
+  "name_micron_technology_inc.": {
+    "symbol": "MU",
+    "name": "Micron Technology Inc.",
+    "exchange": "NASDAQ",
+    "market_cap": null,
+    "sector": "Technology",
+    "industry": null,
+    "last_updated": "2025-09-13T16:21:12.497891"
+  },
+  "ADP": {
+    "symbol": "ADP",
+    "name": "Automatic Data Processing Inc.",
+    "exchange": "NASDAQ",
+    "market_cap": null,
+    "sector": "Technology",
+    "industry": null,
+    "last_updated": "2025-09-13T16:21:12.497902"
+  },
+  "name_automatic_data_processing_inc.": {
+    "symbol": "ADP",
+    "name": "Automatic Data Processing Inc.",
+    "exchange": "NASDAQ",
+    "market_cap": null,
+    "sector": "Technology",
+    "industry": null,
+    "last_updated": "2025-09-13T16:21:12.497902"
+  },
+  "INTU": {
+    "symbol": "INTU",
+    "name": "Intuit Inc.",
+    "exchange": "NASDAQ",
+    "market_cap": null,
+    "sector": "Technology",
+    "industry": null,
+    "last_updated": "2025-09-13T16:21:12.497912"
+  },
+  "name_intuit_inc.": {
+    "symbol": "INTU",
+    "name": "Intuit Inc.",
+    "exchange": "NASDAQ",
+    "market_cap": null,
+    "sector": "Technology",
+    "industry": null,
+    "last_updated": "2025-09-13T16:21:12.497912"
+  },
+  "ISRG": {
+    "symbol": "ISRG",
+    "name": "Intuitive Surgical Inc.",
+    "exchange": "NASDAQ",
+    "market_cap": null,
+    "sector": "Health Care",
+    "industry": null,
+    "last_updated": "2025-09-13T16:21:12.497922"
+  },
+  "name_intuitive_surgical_inc.": {
+    "symbol": "ISRG",
+    "name": "Intuitive Surgical Inc.",
+    "exchange": "NASDAQ",
+    "market_cap": null,
+    "sector": "Health Care",
+    "industry": null,
+    "last_updated": "2025-09-13T16:21:12.497922"
+  },
+  "GILD": {
+    "symbol": "GILD",
+    "name": "Gilead Sciences Inc.",
+    "exchange": "NASDAQ",
+    "market_cap": null,
+    "sector": "Health Care",
+    "industry": null,
+    "last_updated": "2025-09-13T16:21:12.497932"
+  },
+  "name_gilead_sciences_inc.": {
+    "symbol": "GILD",
+    "name": "Gilead Sciences Inc.",
+    "exchange": "NASDAQ",
+    "market_cap": null,
+    "sector": "Health Care",
+    "industry": null,
+    "last_updated": "2025-09-13T16:21:12.497932"
+  }
+}
