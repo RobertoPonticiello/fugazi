@@ -34,14 +34,18 @@ certbot certonly --standalone \
     -d www.${DOMAIN} \
     -d api.${DOMAIN}
 
-# 4. Copia certificati nella directory nginx
-echo "📋 Copia certificati..."
-cp /etc/letsencrypt/live/${DOMAIN}/fullchain.pem /home/fugazi/nginx/ssl/cert.pem
-cp /etc/letsencrypt/live/${DOMAIN}/privkey.pem /home/fugazi/nginx/ssl/key.pem
+# 4. Crea directory ssl per nginx
+echo "📁 Creazione directory SSL per nginx..."
+mkdir -p /home/fugazi/nginx/ssl
 
-# 5. Imposta permessi
-chmod 644 /home/fugazi/nginx/ssl/cert.pem
-chmod 600 /home/fugazi/nginx/ssl/key.pem
+# 5. Copia certificati nella directory nginx per Docker build
+echo "📋 Copia certificati per Docker..."
+cp /etc/letsencrypt/live/${DOMAIN}/fullchain.pem /home/fugazi/nginx/ssl/fullchain.pem
+cp /etc/letsencrypt/live/${DOMAIN}/privkey.pem /home/fugazi/nginx/ssl/privkey.pem
+
+# 6. Imposta permessi
+chmod 644 /home/fugazi/nginx/ssl/fullchain.pem
+chmod 600 /home/fugazi/nginx/ssl/privkey.pem
 
 # 6. Aggiorna nginx.conf con il dominio corretto
 sed -i "s/tuodominio.it/${DOMAIN}/g" /home/fugazi/nginx/nginx.conf

@@ -36,13 +36,11 @@ services:
       - finge-network
 
   nginx:
-    image: nginx:alpine
+    build: ./nginx
     container_name: finge-nginx
     ports:
       - "443:443"
-    volumes:
-      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
-      - ./nginx/ssl:/etc/nginx/ssl:ro
+      - "80:80"
     depends_on:
       - frontend
       - backend
