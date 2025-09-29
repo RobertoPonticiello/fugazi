@@ -25,11 +25,6 @@ const Index = () => {
         setBackendStatus('connected');
       } catch (error) {
         setBackendStatus('disconnected');
-        toast({
-          title: "Backend Disconnected",
-          description: "Cannot connect to the backend server. Using mock data.",
-          variant: "destructive",
-        });
       }
     };
 
@@ -43,15 +38,18 @@ const Index = () => {
     setCompleteAnalysis(null);
     
     try {
-      // Usa l'analisi completa che include i suggerimenti degli analisti
-      const completeAnalysisData = await api.getCompleteAnalysis(ticker);
-      
-      // Estrai i dati per la compatibilità con i componenti esistenti
+      // Esegui in parallelo: analisi completa + info aziendali per market cap
+      const [completeAnalysisData, companyDetails] = await Promise.all([
+        api.getCompleteAnalysis(ticker),
+        api.getCompany(ticker)
+      ]);
+
+      // Componi i dati compatibili con i componenti esistenti, usando market cap reale
       const companyData: CompanyFundamentals = {
         ticker: completeAnalysisData.ticker,
-        name: `${completeAnalysisData.ticker} Inc.`, // Nome generico per ora
+        name: companyDetails.name ?? `${completeAnalysisData.ticker} Inc.`,
         sector: completeAnalysisData.sector,
-        marketCap: null, // Non disponibile nell'analisi completa
+        marketCap: companyDetails.marketCap ?? null,
         fundamentals: completeAnalysisData.fundamentals
       };
       
